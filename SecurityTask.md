@@ -87,6 +87,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO hr_user;
 -- Prevent HR user from accessing Sales schema
 DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO hr_user;
 ```
+![HR_Permissions Output](./image/HRPermissions.png)
 
 
 
