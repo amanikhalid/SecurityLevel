@@ -118,6 +118,9 @@ DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
 **Why schema-level security is better than table-by-table permissions**
 Despite table-by-table permissions require access to each table individually and apply permissions to the entire schema, schema-level security enables permission management at the schema level rather than individual tables.
 
+**How this setup supports data segregation in real-world companies**
+By limiting access to each department's data, this configuration guards against illegal access and preserves data integrity.  It makes it possible to clearly separate concerns, which is essential in settings like sales and human resources where sensitive data is handled.
+
 
 
 
