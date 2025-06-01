@@ -149,3 +149,6 @@ Security levels restrict access to critical data, preventing unauthorized modifi
 
 **3. Reduce Human Error**
 The principle of least privilege ensures users have access to only what they need, reducing the risk of accidental data deletion or alteration.
+
+**4. Meet Compliance and Audit Requirements**
+Implementing strict access controls, such as logging and restricting patient data, ensures compliance with regulations like GDPR, HIPAA, and ISO, supporting internal and external audits.
