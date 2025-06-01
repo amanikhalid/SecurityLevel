@@ -184,3 +184,15 @@ USE CompanyDB;
 CREATE USER hr_user FOR LOGIN hr_login;
 CREATE USER sales_user FOR LOGIN sales_login;
 ```
+
+3.Created Schemas for Departments
+```sql
+-- Create HR schema
+CREATE SCHEMA HR;
+
+-- Create Sales schema
+CREATE SCHEMA Sales;
+```
+
+
+
