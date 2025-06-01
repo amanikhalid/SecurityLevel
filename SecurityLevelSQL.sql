@@ -29,4 +29,10 @@ CREATE TABLE HR.Employees (
     Salary DECIMAL(10, 2)
 );
 
+-- HR.Departments table
+CREATE TABLE HR.Departments (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName NVARCHAR(100),
+    ManagerID INT
+);
 
