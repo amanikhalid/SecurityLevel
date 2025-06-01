@@ -298,3 +298,21 @@ Roles with particular permissions, like ReadOnly or DataEntry roles, ought to be
  To keep track of every action taken by users, particularly those with elevated permissions, audit logs ought to be enabled.  Additionally, role creation should be restricted to DBAs or admins to prevent unauthorized access and modifications.  This would guarantee that roles and permissions can only be created or modified by authorized personnel.
  Separating the development and production environments
  Environments for development and production ought to be kept totally apart.
+
+ ### Lessons Learned
+
+ **1. Only test data and non-sensitive development environments should be accessible to developers.**
+
+ **2. Administrators and DBAs must manage:**
+
+ - Creation of users and roles
+
+ - Object management and schema
+
+ - Access to the production database
+
+ **3. The Principle of Minimum Privilege:**
+
+ - Users should only be given the rights they need to do their tasks.
+
+- This lessens the possibility of unintentional harm or data leakage.
