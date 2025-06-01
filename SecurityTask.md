@@ -34,6 +34,8 @@ CREATE SCHEMA HR;
 -- Create Sales schema
 CREATE SCHEMA Sales;
 ```
+![HRandSalesSchema Output](./image/HRSalesSchemas.png)
+
 
 
 
