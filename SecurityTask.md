@@ -178,3 +178,9 @@ CREATE LOGIN hr_login WITH PASSWORD = 'Hr@2299';
 CREATE USER hr_user FOR LOGIN hr_login;
 ```
 
+2.Mapped Logins to Database Users
+```sql
+USE CompanyDB;
+CREATE USER hr_user FOR LOGIN hr_login;
+CREATE USER sales_user FOR LOGIN sales_login;
+```
