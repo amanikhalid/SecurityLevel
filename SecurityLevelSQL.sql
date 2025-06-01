@@ -12,3 +12,10 @@ CREATE USER hr_user FOR LOGIN hr_login;
 CREATE LOGIN sales_login WITH PASSWORD = 'Sales@2299';
 CREATE USER sales_user FOR LOGIN sales_login;
 
+
+-- Create HR schema
+CREATE SCHEMA HR;
+
+
+-- Create Sales schema
+CREATE SCHEMA Sales;
