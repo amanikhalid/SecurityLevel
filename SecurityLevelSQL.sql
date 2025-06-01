@@ -36,3 +36,11 @@ CREATE TABLE HR.Departments (
     ManagerID INT
 );
 
+-- Sales.Customers table
+CREATE TABLE Sales.Customers (
+    CustomerID INT PRIMARY KEY,
+    CustomerName NVARCHAR(100),
+    Email NVARCHAR(100),
+    Region NVARCHAR(50)
+);
+
