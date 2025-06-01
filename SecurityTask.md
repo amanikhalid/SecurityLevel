@@ -75,6 +75,19 @@ CREATE TABLE Sales.Orders (
 ```
 ![CreatedTableInsideSchema Output](./image/TableInsideSchema.png)
 
+--------------
+
+### Assign schema-level permissions so:
+
+- HR users cannot access Sales data.
+```sql
+-- Give HR user full access to HR schema
+GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO hr_user;
+
+-- Prevent HR user from accessing Sales schema
+DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO hr_user;
+```
+
 
 
 
