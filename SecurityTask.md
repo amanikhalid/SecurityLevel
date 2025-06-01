@@ -112,8 +112,11 @@ DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
 - Try to access Sales.Customers
 ![CannotAccessToHRTable Output](./image/CannotAccessToHR.png)
 
-- 
 
+
+#### 3. Write a short explanation:
+**Why schema-level security is better than table-by-table permissions**
+Despite table-by-table permissions require access to each table individually and apply permissions to the entire schema, schema-level security enables permission management at the schema level rather than individual tables.
 
 
 
