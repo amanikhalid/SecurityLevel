@@ -36,6 +36,46 @@ CREATE SCHEMA Sales;
 ```
 ![HRandSalesSchema Output](./image/HRSalesSchemas.png)
 
+------------------
+
+#### 3. Create a few sample tables inside each schema.
+ ```sql
+-- HR.Employees table
+CREATE TABLE HR.Employees (
+    EmployeeID INT PRIMARY KEY,
+    FullName NVARCHAR(100),
+    Position NVARCHAR(50),
+    HireDate DATE,
+    Salary DECIMAL(10, 2)
+);
+
+-- HR.Departments table
+CREATE TABLE HR.Departments (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName NVARCHAR(100),
+    ManagerID INT
+);
+
+-- Sales.Customers table
+CREATE TABLE Sales.Customers (
+    CustomerID INT PRIMARY KEY,
+    CustomerName NVARCHAR(100),
+    Email NVARCHAR(100),
+    Region NVARCHAR(50)
+);
+
+-- Sales.Orders table
+CREATE TABLE Sales.Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    TotalAmount DECIMAL(10, 2),
+    FOREIGN KEY (CustomerID) REFERENCES Sales.Customers(CustomerID)
+);
+```
+
+
+
 
 
 
