@@ -168,7 +168,7 @@ Developers can accidentally modify production data, create or drop tables in the
 Interns can access confidential HR data, potentially leading to privacy violations and legal repercussions, such as breaching GDPR compliance by sending personal employee data to a friend.
 
 ### Task Summary
-• How you created logins, users, and schemas 
+**• How you created logins, users, and schemas** 
 
 1. Created SQL Logins
 
@@ -194,7 +194,7 @@ CREATE SCHEMA HR;
 CREATE SCHEMA Sales;
 ```
 
-- How Schema Permission Limited Access
+**- How Schema Permission Limited Access**
 ```sql
 -- HR user can access HR schema
 GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO hr_user;
@@ -208,4 +208,21 @@ DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
 ```
 
 
+**- How this applies to real companies**
+
+How Actual Companies Are Affected by This Departments like HR, Finance, Sales, and IT manage sensitive and unique data in real-world businesses.  Without appropriate access control:
+
+ 1. Executive salaries could be viewed by an HR intern.
+
+ 2. Employee records could be inadvertently erased by a sales representative.
+
+ 3. By testing directly in production databases, a developer could introduce bugs.
+
+ **Data specific to a department has distinct boundaries thanks to schema-level security.**
+
+ - Scalability: Rather than granting or denying access to specific tables, grant or revoke access to entire schemas.
+
+ - adherence to data protection laws (such as HIPAA and GDPR).
+
+ - Make sure that only authorized roles handle sensitive data to ensure audit readiness.
 
