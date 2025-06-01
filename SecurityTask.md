@@ -98,6 +98,11 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO sales_user;
 DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
 ```
 
+![Sales_Permissions Output](./image/SalesPermissions.png)
+
+
+
+
 
 
 
