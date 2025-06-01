@@ -275,3 +275,17 @@ Team operations were disrupted when HR staff were unable to access them because 
 
  - Individuals were given privileges at random.
 
+ ### Suggested Solutions
+ Describe how these problems might have been prevented by using:
+
+
+- Schema-level authorization
+
+To limit access to particular schemas according to user roles, schema-level permissions ought to have been put in place. For instance, only the HR schema should be accessible to HR users, and only the Sales schema should be accessible to Sales users. This would stop unintentional cross-departmental data manipulation.
+
+- Role separation (e.g., data entry, read-only)
+
+Roles with particular permissions, like ReadOnly or DataEntry roles, ought to be defined. Production data shouldn't be entirely under the developers' control. Instead, they ought to have restricted access so they can complete essential tasks without worrying about unintentional deletions or changes.
+
+
+
