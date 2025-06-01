@@ -230,14 +230,29 @@ How Actual Companies Are Affected by This Departments like HR, Finance, Sales, a
  ## Security Scenario: When Access Goes Wrong
 
  #### Summary of the Problems
- 1.Accidental Data Deletion
+ **1.Accidental Data Deletion**
 
  Instead of using the test environment, Adil accidentally executed DELETE FROM Employees on the live production database.
 
 Because no backup was made in advance, the data was permanently lost.
 
-2.Salary Data Leak
+**2.Salary Data Leak**
 
 Adil produced a report with private salary data in it.
 
 He violated company policy and privacy when he unintentionally shared the file with an outside UI developer.
+
+**3.Unauthorized Role Creation**
+
+Without permission, Adil made a new SQL login for a junior developer.
+
+That junior developer had unrestricted access to private HR information.
+
+**4.Schema Confusion**
+
+Rather than using the HR schema, Adil made new tables using the default DBO schema.
+
+Team operations were disrupted when HR staff were unable to access them because of missing permissions.
+
+
+
