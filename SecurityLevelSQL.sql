@@ -19,3 +19,14 @@ CREATE SCHEMA HR;
 
 -- Create Sales schema
 CREATE SCHEMA Sales;
+
+-- HR.Employees table
+CREATE TABLE HR.Employees (
+    EmployeeID INT PRIMARY KEY,
+    FullName NVARCHAR(100),
+    Position NVARCHAR(50),
+    HireDate DATE,
+    Salary DECIMAL(10, 2)
+);
+
+
