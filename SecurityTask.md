@@ -152,3 +152,8 @@ The principle of least privilege ensures users have access to only what they nee
 
 **4. Meet Compliance and Audit Requirements**
 Implementing strict access controls, such as logging and restricting patient data, ensures compliance with regulations like GDPR, HIPAA, and ISO, supporting internal and external audits.
+
+### Real-World Risks Without Security
+**Explain what might happen if:**
+- Everyone has full access
+Full access to sensitive data, unauthorized users, and lack of clear accountability can lead to security breaches, compromising company policy and privacy laws, as seen in employee sharing.
