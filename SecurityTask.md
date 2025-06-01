@@ -156,4 +156,9 @@ Implementing strict access controls, such as logging and restricting patient dat
 ### Real-World Risks Without Security
 **Explain what might happen if:**
 - Everyone has full access
+
 Full access to sensitive data, unauthorized users, and lack of clear accountability can lead to security breaches, compromising company policy and privacy laws, as seen in employee sharing.
+
+- Developers Modify Production Data
+
+Developers can accidentally modify production data, create or drop tables in the wrong schema, or modify financial or operational data in real-time systems, leading to data loss.
