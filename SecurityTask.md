@@ -229,7 +229,7 @@ How Actual Companies Are Affected by This Departments like HR, Finance, Sales, a
  -------------------
  ## Security Scenario: When Access Goes Wrong
 
- #### Summary of the Problems
+ ### Summary of the Problems
  **1.Accidental Data Deletion**
 
  Instead of using the test environment, Adil accidentally executed DELETE FROM Employees on the live production database.
@@ -254,5 +254,24 @@ Rather than using the HR schema, Adil made new tables using the default DBO sche
 
 Team operations were disrupted when HR staff were unable to access them because of missing permissions.
 
+### Root Causes (Security Flaws)
+- No distinction between production and development
 
+ - Live data was directly accessible to developers.
+
+ - For safe testing, there were no isolated environments available.
+
+- Developers are granted complete access.
+
+- Adil was authorized to view sensitive data and carry out high-risk tasks like DELETE and CREATE LOGIN.
+
+ - Absence of schema-level limitations
+
+ - Confusion and access problems resulted from Adil's ability to create and alter objects in any schema.
+
+ - Absence of permission control based on roles
+
+ - Roles like ReadOnly, DataEntry, and DevOps are not used.
+
+ - Individuals were given privileges at random.
 
