@@ -18,4 +18,7 @@ CREATE LOGIN sales_login WITH PASSWORD = 'Sales@2299';
 CREATE USER sales_user FOR LOGIN sales_login;
 ```
 
+![CreatedCompanyDatabase Output](./image/CompanyDB.png)
+
+
 
