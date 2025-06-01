@@ -162,3 +162,7 @@ Full access to sensitive data, unauthorized users, and lack of clear accountabil
 - Developers Modify Production Data
 
 Developers can accidentally modify production data, create or drop tables in the wrong schema, or modify financial or operational data in real-time systems, leading to data loss.
+
+- Interns Access HR Data
+
+Interns can access confidential HR data, potentially leading to privacy violations and legal repercussions, such as breaching GDPR compliance by sending personal employee data to a friend.
