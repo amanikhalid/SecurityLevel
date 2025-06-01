@@ -134,7 +134,8 @@ A database user, created using CREATE USER, is a server login that grants access
 **3. Schema-Level Permissions**
 A schema is a logical container for database objects, with schema-level permissions allowing or denying access to all within it, making it more efficient than assigning permissions to individual objects.
 
-
+**4. Object-Level Permissions**
+This method controls access to individual objects, such as tables or views, but is more granular and harder to maintain for large systems.
 
 
 
