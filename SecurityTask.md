@@ -226,3 +226,13 @@ How Actual Companies Are Affected by This Departments like HR, Finance, Sales, a
 
  - Make sure that only authorized roles handle sensitive data to ensure audit readiness.
 
+ -------------------
+ ## Security Scenario: When Access Goes Wrong
+
+ #### Summary of the Problems
+ 1.Accidental Data Deletion
+
+ Instead of using the test environment, Adil accidentally executed DELETE FROM Employees on the live production database.
+
+Because no backup was made in advance, the data was permanently lost.
+
