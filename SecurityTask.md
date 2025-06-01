@@ -109,6 +109,10 @@ DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
 - Connect as hr_login and access HR.Employees
 ![AccessToHRTable Output](./image/AccessToHRTable.png)
 
+- Try to access Sales.Customers
+![CannotAccessToHRTable Output](./image/CannotAccessToHR.png)
+
+- 
 
 
 
