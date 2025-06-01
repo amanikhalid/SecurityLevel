@@ -236,3 +236,8 @@ How Actual Companies Are Affected by This Departments like HR, Finance, Sales, a
 
 Because no backup was made in advance, the data was permanently lost.
 
+2.Salary Data Leak
+
+Adil produced a report with private salary data in it.
+
+He violated company policy and privacy when he unintentionally shared the file with an outside UI developer.
