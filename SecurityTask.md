@@ -128,7 +128,8 @@ By limiting access to each department's data, this configuration guards against 
 **1. Server-Level Login**
 A server-level login connects a user or application to a SQL Server instance, allowing entry into the system using SQL or Windows Authentication.
 
-
+**2. Database-Level User**
+A database user, created using CREATE USER, is a server login that grants access to a specific database, allowing interaction with specific schemas and tables.
 
 
 
