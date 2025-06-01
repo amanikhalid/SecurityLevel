@@ -288,4 +288,13 @@ To limit access to particular schemas according to user roles, schema-level perm
 Roles with particular permissions, like ReadOnly or DataEntry roles, ought to be defined. Production data shouldn't be entirely under the developers' control. Instead, they ought to have restricted access so they can complete essential tasks without worrying about unintentional deletions or changes.
 
 
+- Views are used to conceal sensitive columns.
 
+ Views should be designed to show users only the columns that are absolutely necessary.  To ensure that sensitive information is not available to those who do not require it, a view for HR users might, for instance, omit salary information.
+
+
+- The creation of restricted roles or audit logs
+
+ To keep track of every action taken by users, particularly those with elevated permissions, audit logs ought to be enabled.  Additionally, role creation should be restricted to DBAs or admins to prevent unauthorized access and modifications.  This would guarantee that roles and permissions can only be created or modified by authorized personnel.
+ Separating the development and production environments
+ Environments for development and production ought to be kept totally apart.
