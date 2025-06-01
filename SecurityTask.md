@@ -22,4 +22,5 @@ CREATE USER sales_user FOR LOGIN sales_login;
 
 ![SQLLogins Output](./image/SQL_Logins.png)
 
+![Logins_SS Output](./image/Logins.png)
 
