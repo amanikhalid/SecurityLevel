@@ -8,3 +8,7 @@ USE CompanyDB
 CREATE LOGIN hr_login WITH PASSWORD = 'Hr@2299';
 CREATE USER hr_user FOR LOGIN hr_login;
 
+-- Create login and user for Sales department
+CREATE LOGIN sales_login WITH PASSWORD = 'Sales@2299';
+CREATE USER sales_user FOR LOGIN sales_login;
+
