@@ -89,6 +89,14 @@ DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO hr_user;
 ```
 ![HR_Permissions Output](./image/HRPermissions.png)
 
+- Sales users cannot access HR data.
+```sql
+-- Give Sales user full access to Sales schema
+GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO sales_user;
+
+-- Prevent Sales user from accessing HR schema
+DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
+```
 
 
 
