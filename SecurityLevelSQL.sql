@@ -62,3 +62,6 @@ DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO hr_user;
 GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO sales_user;
 -- Prevent Sales user from accessing HR schema
 DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
+
+EXECUTE AS USER = 'hr_user';
+SELECT * FROM HR.Employees; 
