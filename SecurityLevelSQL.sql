@@ -44,3 +44,14 @@ CREATE TABLE Sales.Customers (
     Region NVARCHAR(50)
 );
 
+-- Sales.Orders table
+CREATE TABLE Sales.Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    TotalAmount DECIMAL(10, 2),
+    FOREIGN KEY (CustomerID) REFERENCES Sales.Customers(CustomerID)
+);
+
+
+
