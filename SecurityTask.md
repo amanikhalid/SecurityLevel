@@ -24,3 +24,16 @@ CREATE USER sales_user FOR LOGIN sales_login;
 
 ![Logins_SS Output](./image/Logins.png)
 
+------------------
+
+#### 2. Create two schemas: HR and Sales
+ ```sql
+-- Create HR schema
+CREATE SCHEMA HR;
+
+-- Create Sales schema
+CREATE SCHEMA Sales;
+```
+
+
+
