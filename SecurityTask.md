@@ -146,3 +146,6 @@ Sensitive data like employee salaries and financial transactions should be restr
 
 **2. Prevent Unauthorized Changes**
 Security levels restrict access to critical data, preventing unauthorized modifications. Junior developers are assigned read-only roles to view sales data without modification.
+
+**3. Reduce Human Error**
+The principle of least privilege ensures users have access to only what they need, reducing the risk of accidental data deletion or alteration.
