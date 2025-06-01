@@ -166,3 +166,15 @@ Developers can accidentally modify production data, create or drop tables in the
 - Interns Access HR Data
 
 Interns can access confidential HR data, potentially leading to privacy violations and legal repercussions, such as breaching GDPR compliance by sending personal employee data to a friend.
+
+### Task Summary
+• How you created logins, users, and schemas 
+
+1. Created SQL Logins
+
+```sql
+-- Create login and user for HR department
+CREATE LOGIN hr_login WITH PASSWORD = 'Hr@2299';
+CREATE USER hr_user FOR LOGIN hr_login;
+```
+
