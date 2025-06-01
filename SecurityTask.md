@@ -121,6 +121,16 @@ Despite table-by-table permissions require access to each table individually and
 **How this setup supports data segregation in real-world companies**
 By limiting access to each department's data, this configuration guards against illegal access and preserves data integrity.  It makes it possible to clearly separate concerns, which is essential in settings like sales and human resources where sensitive data is handled.
 
+-------------------
+## Reflection Report Instructions
+
+#### Understanding SQL Security Levels and Real-World Risks
+**1. Server-Level Login**
+A server-level login connects a user or application to a SQL Server instance, allowing entry into the system using SQL or Windows Authentication.
+
+
+
+
 
 
 
