@@ -194,5 +194,18 @@ CREATE SCHEMA HR;
 CREATE SCHEMA Sales;
 ```
 
+- How Schema Permission Limited Access
+```sql
+-- HR user can access HR schema
+GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO hr_user;
+-- HR user is denied access to Sales schema
+DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO hr_user;
+
+-- Sales user can access Sales schema
+GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::Sales TO sales_user;
+-- Sales user is denied access to HR schema
+DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
+```
+
 
 
