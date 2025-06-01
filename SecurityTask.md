@@ -131,6 +131,8 @@ A server-level login connects a user or application to a SQL Server instance, al
 **2. Database-Level User**
 A database user, created using CREATE USER, is a server login that grants access to a specific database, allowing interaction with specific schemas and tables.
 
+**3. Schema-Level Permissions**
+A schema is a logical container for database objects, with schema-level permissions allowing or denying access to all within it, making it more efficient than assigning permissions to individual objects.
 
 
 
