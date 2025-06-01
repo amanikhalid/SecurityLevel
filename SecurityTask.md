@@ -124,7 +124,7 @@ By limiting access to each department's data, this configuration guards against 
 -------------------
 ## Reflection Report Instructions
 
-#### Understanding SQL Security Levels and Real-World Risks
+### Understanding SQL Security Levels and Real-World Risks
 **1. Server-Level Login**
 A server-level login connects a user or application to a SQL Server instance, allowing entry into the system using SQL or Windows Authentication.
 
@@ -138,4 +138,8 @@ A schema is a logical container for database objects, with schema-level permissi
 This method controls access to individual objects, such as tables or views, but is more granular and harder to maintain for large systems.
 
 
+### Benefits of Applying Security Levels 
+Layered security in SQL Server offers control, protection, and accountability within a database environment.
 
+**1. Restrict Sensitive Data**
+Sensitive data like employee salaries and financial transactions should be restricted to authorized roles through schema-level or object-level security.
