@@ -100,6 +100,15 @@ DENY SELECT, INSERT, UPDATE, DELETE ON SCHEMA::HR TO sales_user;
 
 ![Sales_Permissions Output](./image/SalesPermissions.png)
 
+-------------------
+
+#### Task Output Checklist
+
+#### Try to:
+
+- Connect as hr_login and access HR.Employees
+![AccessToHRTable Output](./image/AccessToHRTable.png)
+
 
 
 
