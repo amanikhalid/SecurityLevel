@@ -73,7 +73,7 @@ CREATE TABLE Sales.Orders (
     FOREIGN KEY (CustomerID) REFERENCES Sales.Customers(CustomerID)
 );
 ```
-
+![CreatedTableInsideSchema Output](./image/TableInsideSchema.png)
 
 
 
